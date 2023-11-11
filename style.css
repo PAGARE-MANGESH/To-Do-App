@@ -1,0 +1,188 @@
+body {
+     font-family: Arial, sans-serif;
+     margin: 20px;
+     background: #000;
+     color: #ddd;
+     text-align: center;
+}
+
+h1 {
+     color: #82a288b4;
+     margin-top: 5%;
+     margin-bottom: 2%;
+}
+
+
+
+#taskInput {
+     width: 50%;
+     padding: 10px;
+     font-size: 20px;
+     text-align: center;
+     margin-bottom: 10px;
+}
+
+#btn {
+     width: 50%;
+     padding: 10px;
+     font-size: large;
+}
+
+#histroybtn {
+     width: 50%;
+     margin-top: 10px;
+     padding: 10px;
+     font-size: large;
+}
+
+#container {
+     max-width: 600px;
+     margin: 0 auto;
+     display: block;
+}
+
+
+
+
+ #table {
+     width: 100%;
+     text-align: center;
+     border-collapse: collapse;
+
+     margin-top: 10px;
+}
+
+#table th,
+#table td,
+tr {
+     padding: 10px;
+     font-size: 20px;
+     box-shadow: inset;
+     word-wrap: break-word;
+} 
+
+
+
+#table th,
+#table td {
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: inset;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide text that overflows the cell */
+    text-overflow: ellipsis; /* Show ellipsis (...) for truncated text */
+}
+
+/* Remove word-wrap for smaller screens */
+@media screen and (max-width: 600px) {
+    #table th,
+    #table td {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+
+
+
+
+tr:nth-child(even) {
+     background-color: #88a0c1b4;
+}
+
+tr:nth-child(odd) {
+     background-color: #443f3fb1;
+}
+
+#serialNO {
+     width: 5px;
+     border-right: 1px solid #ddd;
+}
+
+#action {
+     width: 10px;
+     border-left: 1px solid #ddd;
+
+}
+
+
+#addTask {
+     margin-top: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+     body {
+          max-height: 100vh;
+          padding: auto;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+     }
+
+     h1 {
+          color: #82a288b4;
+          margin-top: 25%;
+          font-size: 30px;
+          margin-bottom: 2%;
+     }
+
+
+
+
+     #taskInput {
+          margin-top: 20px;
+          width: 70%;
+          font-size: 20px;
+          height: 40px;
+
+     }
+
+     #btn {
+          width: 70%;
+          height: 40px;
+          margin-bottom: 20px;
+
+     }
+
+     #histroybtn {
+          width: 70%;
+          height: 40px;
+
+     }
+
+
+     #table {
+          width: 100%;
+          margin-top: 20px;
+          max-height: auto;
+          text-align: left;
+          border-collapse: collapse;
+     }
+
+     #table th,
+     #table td,
+     tr {
+          align-items: center;
+          padding: 5px 20px;
+          font-size: 10px;
+          /* background-color: aqua; */
+          border-bottom: 1px solid #ddd;
+          
+     }
+
+     #serialNO {
+          width: 2px;
+          border-right: 1px solid #ddd;
+     }
+
+     #action {
+          width: 5px;
+          border-left: 1px solid #ddd;
+
+     }
+
+}
